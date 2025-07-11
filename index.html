@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assembleia de Deus Livre em Cristo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="imgs/favicon (1).png" type="image/png" />
+  </head>
+  <body>
+   <div id="preloader">
+  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+</div>
+
+    <header>
+      <div class="logo">
+        <img
+          src="/imgs/logo-ad.png"
+          alt="Logo Assembleia de Deus Livre em Cristo"
+        />
+        <span>Assembleia de Deus<br />Livre em Cristo</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="passos.html">Próximos Passos</a></li>
+          <li><a href="ministerios.html">Ministérios</a></li>
+          <li><a href="localizaçao.html">Localizações</a></li>
+          <li><a href="assistir.html">Assistir</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="doar.html">Doar</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="search-box" id="searchBox">
+      <input type="text" placeholder="Buscar..." />
+      <button onclick="fecharBusca()">Fechar</button>
+    </div>
+
+    <section class="hero">
+      <div class="overlay">
+        <h1>Seja Bem-vindo!</h1>
+        <p>Participe de uma experiência de culto neste final de semana</p>
+        <div class="buttons">
+          <a href="online.html" class="btn">ONLINE</a>
+          <a href="culto-presencial.html" class="btn">PRESENCIAL</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const searchIcon = document.querySelector(".fa-search");
+      const searchBox = document.getElementById("searchBox");
+
+      if (searchIcon) {
+        searchIcon.addEventListener("click", () => {
+          searchBox.style.display = "flex";
+        });
+      }
+
+      function fecharBusca() {
+        searchBox.style.display = "none";
+      }
+    </script>
+
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 600); // tempo da transição
+    }, 1000); // tempo mínimo de exibição (1 segundo)
+  });
+</script>
+
+
+
+  </body>
+</html>

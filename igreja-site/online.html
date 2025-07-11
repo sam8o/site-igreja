@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culto Online | Assembleia de Deus Livre em Cristo</title>
+    <link rel="stylesheet" href="online.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2e8f6fd3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="imgs/favicon (1).png" type="image/png" />
+  </head>
+  <body>
+
+   <div id="preloader">
+  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+</div>
+
+    <header>
+      <div class="logo">
+        <img src="/imgs/logo-ad.png" alt="Logo da Igreja" />
+        Assembleia de Deus Livre em Cristo
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="assistir.html" class="ativo">Culto Online</a></li>
+          <li><a href="culto-presencial.html">Culto Presencial</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-online">
+      <div class="overlay">
+        <h1>CULTO ONLINE</h1>
+        <p>Assista ao vivo de onde você estiver</p>
+      </div>
+    </section>
+
+    <section class="player-online">
+      <div class="video-box">
+        <video
+          width="100%"
+          height="500"
+          controls
+          poster="/imgs/thumb-online.jpg"
+        >
+          <source src="/videos/onlineeeee.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="descricao-video">
+        Transmissão ao vivo – Todos os domingos às 19h
+      </p>
+    </section>
+
+    <section class="orientacoes">
+      <div class="container">
+        <h2>Como Participar?</h2>
+        <ul>
+          <li>
+            <i class="fas fa-wifi"></i> Conecte-se à internet com boa qualidade
+          </li>
+          <li>
+            <i class="fas fa-tv"></i> Assista pelo celular, tablet ou Smart TV
+          </li>
+          <li>
+            <i class="fas fa-heart"></i> Prepare seu coração e adoração onde
+            estiver
+          </li>
+          <li>
+            <i class="fas fa-share-alt"></i> Compartilhe o link com sua família
+            e amigos
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2025 Assembleia de Deus Livre em Cristo. Todos os direitos reservados.
+      </p>
+    </footer>
+
+<script>
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          const preloader = document.getElementById("preloader");
+          preloader.style.opacity = "0";
+          preloader.style.pointerEvents = "none";
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 600); // tempo da transição
+        }, 1000); // tempo mínimo de exibição (1 segundo)
+      });
+    </script>
+
+  </body>
+</html>

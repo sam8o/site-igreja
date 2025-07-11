@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Assembleia de Deus Livre em Cristo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/favicon (1).png" type="image/png" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <img
+          src="/imgs/logo-ad.png"
+          alt="Logo Assembleia de Deus Livre em Cristo"
+        />
+        <span>Assembleia de Deus<br />Livre em Cristo</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" class="ativo">Sobre Nós</a></li>
+          <li><a href="passos.html">Próximos Passos</a></li>
+          <li><a href="ministerios.html">Ministérios</a></li>
+          <li><a href="localizacoes.html">Localizações</a></li>
+          <li><a href="assistir.html">Assistir</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="doar.html">Doar</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sobre-baner">
+      <div class="overlay">
+        <h1>Sobre Nós</h1>
+        <p>Uma comunidade viva e cheia do Espírito Santo</p>
+      </div>
+    </section>
+
+    <section class="sobre-conteudo">
+      <div class="container">
+        <h2 class="fade-in">Quem Somos</h2>
+        <p class="fade-in">
+          A Assembleia de Deus Livre em Cristo é uma igreja cristã que acredita
+          na transformação de vidas pelo poder do Evangelho. Fundada com base na
+          Palavra de Deus, nossa missão é alcançar pessoas, ensinar a verdade e
+          viver o amor de Cristo em comunidade.
+        </p>
+
+        <h2 class="fade-in">Nossa Visão</h2>
+        <p class="fade-in">
+          Ser uma igreja vibrante, acolhedora e comprometida com a presença de
+          Deus, sendo referência na proclamação da Palavra e no cuidado com as
+          pessoas.
+        </p>
+
+        <h2 class="fade-in">Nossos Valores</h2>
+        <ul class="fade-in">
+          <li>🕊 Palavra de Deus como fundamento</li>
+          <li>❤ Amor, comunhão e unidade</li>
+          <li>🙏 Vida de oração e intimidade com Deus</li>
+          <li>🔥 Avivamento e santidade</li>
+          <li>🌍 Compromisso com a missão e o próximo</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Assembleia de Deus Livre em Cristo. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script>
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      elements.forEach((el) => observer.observe(el));
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          const preloader = document.getElementById("preloader");
+          preloader.style.opacity = "0";
+          preloader.style.pointerEvents = "none";
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 600); // tempo da transição
+        }, 1000); // tempo mínimo de exibição (1 segundo)
+      });
+    </script>
+  </body>
+</html>

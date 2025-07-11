@@ -1,0 +1,382 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #fdfdfd;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* fundo preto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#preloader p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Animação lds-ellipsis */
+.lds-ellipsis {
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes lds-ellipsis3 {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+@keyframes lds-ellipsis2 {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(24px, 0); }
+}
+
+
+
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.logo img {
+  height: 70px;
+  object-fit: contain;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+nav i.fas.fa-search {
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+nav i.fas.fa-search:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: url('/imgs/fundo0oo.png') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  border: 1px solid white;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.buttons .btn:hover {
+  background: white;
+  color: black;
+}
+
+
+
+
+
+
+
+/* Página Sobre Nós */
+.sobre-baner {
+  height: 60vh;
+  background: url('/imgs/sobreee.png') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sobre-banner .overlay {
+   background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 30px;
+  color: white;
+
+  
+}
+
+.sobre-conteudo {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.sobre-conteudo .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre-conteudo h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.sobre-conteudo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sobre-conteudo ul li {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+footer {
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #000000;
+  padding: 20px;
+}
+
+
+
+/* Animações de fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.passos-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.passos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.passo {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.passo:hover {
+  transform: translateY(-8px);
+}
+
+.passo i {
+  font-size: 36px;
+  color: #0066ff;
+  margin-bottom: 15px;
+}
+
+.passo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.passo p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+.passos-banner {
+  height: 60vh;
+  background: url('/imgs/passos.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.passos-banner .overlay {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 30px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.search-box {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-box button {
+  padding: 8px 15px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #004dc4;
+}

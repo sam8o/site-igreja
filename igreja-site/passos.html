@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Próximos Passos | Assembleia de Deus Livre em Cristo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+   <link rel="icon" href="imgs/favicon (1).png" type="image/png">
+</head>
+ <div id="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="/imgs/logo-ad.png" alt="Logo Assembleia de Deus Livre em Cristo" />
+      <span>Assembleia de Deus<br/>Livre em Cristo</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="passos.html" class="ativo">Próximos Passos</a></li>
+        <li><a href="ministerios.html">Ministérios</a></li>
+        <li><a href="localizacoes.html">Localizações</a></li>
+        <li><a href="assistir.html">Assistir</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="doar.html">Doar</a></li>
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section class="passos-banner">
+  <div class="overlay">
+    <h1>Próximos Passos</h1>
+    <p>Descubra como crescer na fé e se envolver com a igreja</p>
+  </div>
+</section>
+
+<div class="passos-grid">
+  <div class="passo fade-in">
+    <i class="fas fa-cross"></i>
+    <h3>Conheça Jesus</h3>
+    <p>O primeiro passo é entregar sua vida a Jesus, nosso Salvador.</p>
+  </div>
+
+  <div class="passo fade-in">
+    <i class="fas fa-water"></i>
+    <h3>Batismo nas Águas</h3>
+    <p>Declare publicamente sua fé e compromisso com Cristo.</p>
+  </div>
+
+  <div class="passo fade-in">
+    <i class="fas fa-users"></i>
+    <h3>Participe de um Grupo</h3>
+    <p>Conecte-se com outros irmãos e cresça em comunhão.</p>
+  </div>
+
+  <div class="passo fade-in">
+    <i class="fas fa-hand-holding-heart"></i>
+    <h3>Sirva em um Ministério</h3>
+    <p>Descubra seus dons e coloque-os em prática para o Reino.</p>
+  </div>
+
+  <div class="passo fade-in">
+    <i class="fas fa-church"></i>
+    <h3>Conecte-se com a Igreja</h3>
+    <p>Participe dos cultos e eventos. Faça parte dessa família de fé.</p>
+  </div>
+
+  <div class="passo fade-in">
+    <i class="fas fa-globe-americas"></i>
+    <h3>Viva a Missão</h3>
+    <p>Seja luz onde estiver, cumprindo o propósito de Deus.</p>
+  </div>
+</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Assembleia de Deus Livre em Cristo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 600); // tempo da transição
+    }, 1000); // tempo mínimo de exibição (1 segundo)
+  });
+</script>
+
+
+
+</body>
+</html>

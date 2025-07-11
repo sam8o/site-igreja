@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministérios | Assembleia de Deus Livre em Cristo</title>
+    <link rel="stylesheet" href="ministerio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="imgs/favicon (1).png" type="image/png" />
+  </head>
+  <body>
+     <div id="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="/imgs/logo-ad.png" alt="Logo da Igreja" />
+        Assembleia de Deus Livre em Cristo
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="passos.html">Próximos Passos</a></li>
+          <li><a href="ministerios.html">Ministérios</a></li>
+          <li><a href="localizaçao.html">Localização</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="assistir.html">Assistir</a></li>
+          <li><a href="doar.html">Doar</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="ministerios-hero">
+      <div class="overlay">
+        <h1>Ministérios</h1>
+        <p>Servindo com amor, propósito e excelência</p>
+      </div>
+    </section>
+
+    <section class="ministerios-lista">
+      <div class="container">
+        <div class="ministerio-card">
+          <i class="fas fa-music"></i>
+          <h3>Louvor & Adoração</h3>
+          <p>
+            Ministério dedicado a levar a igreja à presença de Deus por meio da
+            música e adoração.
+          </p>
+        </div>
+        <div class="ministerio-card">
+          <i class="fas fa-child"></i>
+          <h3>Ministério Infantil</h3>
+          <p>
+            Ensinando a Palavra de Deus às crianças de maneira divertida e
+            edificante.
+          </p>
+        </div>
+        <div class="ministerio-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Ação Social</h3>
+          <p>Levando cuidado, alimento e amor às famílias em necessidade.</p>
+        </div>
+        <div class="ministerio-card">
+          <i class="fas fa-users"></i>
+          <h3>Discipulado</h3>
+          <p>
+            Ajudando cada membro a crescer na fé por meio de acompanhamento e
+            ensino.
+          </p>
+        </div>
+        <div class="ministerio-card">
+          <i class="fas fa-heart"></i>
+          <h3>Intercessão</h3>
+          <p>
+            Um grupo dedicado à oração constante pela igreja, líderes e
+            necessidades.
+          </p>
+        </div>
+        <div class="ministerio-card">
+          <i class="fas fa-video"></i>
+          <h3>Mídia & Comunicação</h3>
+          <p>
+            Responsável por transmissões ao vivo, redes sociais e produção
+            visual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        ©️ 2025 Assembleia de Deus Livre em Cristo. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 600); // tempo da transição
+    }, 1000); // tempo mínimo de exibição (1 segundo)
+  });
+</script>
+  </body>
+</html>

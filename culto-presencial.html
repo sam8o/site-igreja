@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culto Presencial | Assembleia de Deus Livre em Cristo</title>
+    <link rel="stylesheet" href="presencial.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2e8f6fd3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="imgs/favicon (1).png" type="image/png" />
+  </head>
+  <body>
+
+ <div id="preloader">
+  <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+</div>
+
+
+    <header>
+      <div class="logo">
+        <img src="/imgs/logo-ad.png" alt="Logo da Igreja" />
+        Assembleia de Deus Livre em Cristo
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="passos.html">Próximos Passos</a></li>
+          <li><a href="ministerios.html">Ministérios</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="assistir.html">Assistir</a></li>
+          <li><a href="doar.html">Doar</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presencial-hero">
+      <div class="overlay">
+        <h1>Culto Presencial</h1>
+        <p>Junte-se a nós para adorar e viver a comunhão em comunidade</p>
+      </div>
+    </section>
+
+    <section class="info-presencial">
+      <div class="container">
+        <h2>Horários dos Cultos</h2>
+        <ul>
+          <li>
+            <strong>Domingo:</strong> 9h Escola Bíblica Dominical | 19h Culto da
+            Família
+          </li>
+          <li><strong>Terça-feira:</strong> 19h30 Culto de Oração</li>
+          <li><strong>Sexta-feira:</strong> 19h30 Culto de Libertação</li>
+        </ul>
+
+        <h2>Endereço</h2>
+        <p>
+          Rua Bela Vista, Quadra 16, Lote 15, Monte Azul - Senador Canedo - GO
+        </p>
+
+        <h2>Venha como está</h2>
+        <p>
+          Todos são bem-vindos! Temos espaço para sua família, crianças e
+          jovens. Um ambiente seguro, acolhedor e cheio da presença de Deus.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2025 Assembleia de Deus Livre em Cristo. Todos os direitos reservados.
+      </p>
+    </footer>
+
+<script>
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          const preloader = document.getElementById("preloader");
+          preloader.style.opacity = "0";
+          preloader.style.pointerEvents = "none";
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 600); // tempo da transição
+        }, 1000); // tempo mínimo de exibição (1 segundo)
+      });
+    </script>
+
+  </body>
+</html>
