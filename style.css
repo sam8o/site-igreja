@@ -191,7 +191,7 @@ nav i.fas.fa-search:hover {
 /* Página Sobre Nós */
 .sobre-baner {
   height: 60vh;
-  background: url('/imgs/sobreee.png') center center / cover no-repeat;
+  background: url('imgs/sobreee.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,4 +379,5 @@ footer {
 
 .search-box button:hover {
   background-color: #004dc4;
+
 }
