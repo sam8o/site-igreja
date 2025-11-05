@@ -141,7 +141,7 @@ nav i.fas.fa-search:hover {
 
 .doar-hero {
   height: 60vh;
-  background: url('/imgs/doaraa.png') center center / cover no-repeat;
+  background: url('imgs/doaraa.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,4 +220,5 @@ footer {
   background-color: #fff;
   color: #000000;
   padding: 20px;
+
 }
