@@ -135,7 +135,7 @@ nav i.fas.fa-search:hover {
 
 .assistir-hero {
   height: 60vh;
-  background: url('/imgs/aovivooo.png') center center / cover no-repeat;
+  background: url('imgs/aovivooo.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,4 +205,5 @@ footer {
   background-color: #fff;
   color: #000000;
   padding: 20px;
+
 }
