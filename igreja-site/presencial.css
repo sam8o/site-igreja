@@ -135,7 +135,7 @@ nav i.fas.fa-search:hover {
 
 .presencial-hero {
   height: 60vh;
-  background: url('/imgs/presencialll.png') center center / cover no-repeat;
+  background: url('imgs/presencialll.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,4 +188,5 @@ footer {
   background-color: #ffffff;
   color: #000000;
   padding: 20px;
+
 }
