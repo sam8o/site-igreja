@@ -134,7 +134,7 @@ nav i.fas.fa-search:hover {
 
 .eventos-hero {
   height: 60vh;
-  background: url('/imgs/eventoss.png') center center / cover no-repeat;
+  background: url('imgs/eventoss.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,4 +194,5 @@ footer {
   background-color: #fff;
   color: #000000;
   padding: 20px;
+
 }
