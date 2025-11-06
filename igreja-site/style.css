@@ -143,7 +143,7 @@ nav i.fas.fa-search:hover {
 /* Hero section */
 .hero {
   height: 100vh;
-  background: url('/imgs/fundo0oo.png') center center / cover no-repeat;
+  background: url('imgs/fundo0oo.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,4 +379,5 @@ footer {
 
 .search-box button:hover {
   background-color: #004dc4;
+
 }
