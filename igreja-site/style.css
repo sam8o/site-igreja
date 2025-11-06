@@ -191,7 +191,7 @@ nav i.fas.fa-search:hover {
 /* Página Sobre Nós */
 .sobre-baner {
   height: 60vh;
-  background: url('/imgs/sobreee.png') center center / cover no-repeat;
+  background: url('imgs/sobreee.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,7 +321,7 @@ footer {
 
 .passos-banner {
   height: 60vh;
-  background: url('/imgs/passos.jpg') center center / cover no-repeat;
+  background: url('imgs/passos.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,3 +381,4 @@ footer {
   background-color: #004dc4;
 
 }
+
