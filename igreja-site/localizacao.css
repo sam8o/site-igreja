@@ -140,7 +140,7 @@ nav i.fas.fa-search:hover {
 /* Hero Section */
 .localizacao-hero {
   height: 60vh;
-  background: url('./imgs/localizaçao.png') center center / cover no-repeat;
+  background: url('imgs/localizaçao.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,4 +222,5 @@ footer {
   .localizacao-hero p {
     font-size: 18px;
   }
+
 }
