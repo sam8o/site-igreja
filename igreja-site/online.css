@@ -135,7 +135,7 @@ nav i.fas.fa-search:hover {
 
 .hero-online {
   height: 70vh;
-  background: url('/imgs/onlinee.jpg') center center / cover no-repeat;
+  background: url('imgs/onlinee.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,4 +211,5 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 20px;
+
 }
